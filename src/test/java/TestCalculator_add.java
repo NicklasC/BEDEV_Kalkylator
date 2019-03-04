@@ -3,7 +3,7 @@ import org.junit.Test;
 import static java.lang.Double.POSITIVE_INFINITY;
 import static org.junit.Assert.assertEquals;
 
-public class TestCalkylator_add {
+public class TestCalculator_add {
 
 
     Calculator calculator = new Calculator();
@@ -38,4 +38,6 @@ public class TestCalkylator_add {
         assertEquals(POSITIVE_INFINITY,calculator.add(POSITIVE_INFINITY,0),0);
     }
 
+
+    // TODO: Add testcases for non double input (Throw exception handling)
 }
