@@ -4,7 +4,7 @@ import static java.lang.Double.NEGATIVE_INFINITY;
 import static java.lang.Double.POSITIVE_INFINITY;
 import static org.junit.Assert.assertEquals;
 
-public class TestCalculator_sub {
+public class TestCalculator_subtract {
 
     Calculator calculator = new Calculator();
 
