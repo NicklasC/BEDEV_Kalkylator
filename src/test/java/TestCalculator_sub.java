@@ -10,7 +10,7 @@ public class TestCalculator_sub {
 
     @Test
     public void sub_5_minus_2_is_3(){
-        assertEquals(3,calculator.sub(5,3),0);
+        assertEquals(3,calculator.sub(5,2),0);
     }
 
     @Test
@@ -20,12 +20,12 @@ public class TestCalculator_sub {
 
     @Test
     public void sub_5_minus_infinity_is_negative_infinity(){
-        assertEquals(NEGATIVE_INFINITY,calculator.sub(5,NEGATIVE_INFINITY),0);
+        assertEquals(POSITIVE_INFINITY,calculator.sub(5,NEGATIVE_INFINITY),0);
     }
 
     @Test
     public void positive_infinity_minus_negative_infinity_is_negative_infinity(){
-        assertEquals(NEGATIVE_INFINITY,calculator.sub(POSITIVE_INFINITY,NEGATIVE_INFINITY),0);
+        assertEquals(POSITIVE_INFINITY,calculator.sub(POSITIVE_INFINITY,NEGATIVE_INFINITY),0);
     }
 }
 

@@ -8,7 +8,7 @@ public class Calculator {
         return d1+d2;
     }
     public double sub(double d1, double d2){
-        return 0;
+        return d1-d2;
     }
 
 }
