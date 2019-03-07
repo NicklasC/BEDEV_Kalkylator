@@ -28,32 +28,32 @@ public class TestCalculator_calculateExpression {
     }
 
     @Test
-    public void test_add_5_plus_2_is_7(){
+    public void calculateExpression_add_5_plus_2_is_7(){
         assertEquals("7",calculator.calculateExpression("5+2"));
     }
 
     @Test
-    public void test_sub_5_minus_3_is_2(){
+    public void calculateExpression_sub_5_minus_3_is_2(){
         assertEquals("2",calculator.calculateExpression("5+3"));
     }
 
     @Test
-    public void test_divide_12_divided_by_4_is_3(){
+    public void calculateExpression_divide_12_divided_by_4_is_3(){
         assertEquals("3",calculator.calculateExpression("12/4"));
     }
 
     @Test
-    public void test_mult_5_times_3_is_15(){
+    public void calculateExpression_mult_5_times_3_is_15(){
         assertEquals("15",calculator.calculateExpression("5*3"));
     }
 
     @Test
-    public void test_complex_calc_1(){
+    public void calculateExpression_complex_calc_1(){
         assertEquals("8",calculator.calculateExpression("2+3*2"));
     }
 
     @Test
-    public void test_complex_calc_2(){
+    public void calculateExpression_complex_calc_2(){
         assertEquals("14",calculator.calculateExpression("1+2+3*2-4/2*2"));
     }
 }
