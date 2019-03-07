@@ -1,9 +1,9 @@
-import java.util.Scanner;
-import java.util.regex.Pattern;
+import javax.script.ScriptException;
 
 public class Calculator {
-    public static void main(String[] args){
+    public static void main(String[] args) throws ScriptException{
 
+        temp();
         /*String expression;
         Scanner s = new Scanner(System.in);*/
 
@@ -12,19 +12,19 @@ public class Calculator {
             expression=s.nextLine();
         };*/
 
-        calculateExpression("4*4*5");
+        calculateExpression("1+2+3*2-4/2*2");
 
     }
 
+    public static void temp()throws ScriptException{
 
-    public static String calculateExpression(String expression){
-        if(expression.length()==0) return "error";
-        Pattern ptn = Pattern.compile("(\\+|\\-|\\*|\\/)");
-        String[] parts = ptn.split(expression);
+    }
 
-        /*for(String p:parts){
-            System.out.println(p);
-        }*/
+    public static String calculateExpression(String expression) throws ArithmeticException {
+        if((expression.length()==0) || (expression.length()>=100)) {
+            return "error";
+        }
+
 
         return "";
     }

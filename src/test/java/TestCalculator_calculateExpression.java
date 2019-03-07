@@ -49,11 +49,11 @@ public class TestCalculator_calculateExpression {
 
     @Test
     public void calculateExpression_complex_calc_1(){
-        assertEquals("8",calculator.calculateExpression("2+3*2"));
+        assertEquals("32,5",calculator.calculateExpression("7*4+6-3/2"));
     }
 
     @Test
     public void calculateExpression_complex_calc_2(){
-        assertEquals("14",calculator.calculateExpression("1+2+3*2-4/2*2"));
+        assertEquals("21",calculator.calculateExpression("5*4+7-3*0+4-10"));
     }
 }
